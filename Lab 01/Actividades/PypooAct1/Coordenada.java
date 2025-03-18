@@ -36,6 +36,10 @@ public class Coordenada{
     }
 
     double distancia(Coordenada c){
+        return Math.sqrt(Math.pow(c.x - x,2)+Math.pow(c.y-y,2));
+    }
 
+    static double distancia(Coordenada c1, Coordenada c2){
+        return Math.sqrt(Math.pow(c1.x - c2.x, 2) + Math.pow(c1.y - c2.y, 2));
     }
 }
