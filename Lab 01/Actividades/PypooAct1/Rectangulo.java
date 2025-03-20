@@ -25,7 +25,8 @@ public class Rectangulo {
         return esquina2;
     }
 
+    @Override
     public String toString(){
-
+        return esquina1.toString() + esquina2.toString();
     }
 }
