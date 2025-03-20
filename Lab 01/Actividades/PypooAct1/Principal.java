@@ -24,7 +24,9 @@ public class Principal {
         double x2b = sc.nextDouble();
         double y2b = sc.nextDouble();
 
-        
+        Coordenada c1b = new Coordenada(x1b,y1b);
+        Coordenada c2b = new Coordenada(x2b,y2b);
+        Rectangulo B = new Rectangulo(c1b, c2b);
     }
 
 }
