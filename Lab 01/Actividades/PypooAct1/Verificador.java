@@ -14,5 +14,18 @@ public class Verificador {
         double maxrecBx = Math.max(a1.getX(), a2.getX());
         double minrecBy = Math.min(a1.getY(), a2.getY());
         double maxrecBy = Math.max(a1.getY(), a2.getY());
+
+        if ((maxrecAx > minrecBx && maxrecBx > minrecAx && maxrecAy > minrecBy && maxrecBy > minrecAy)){
+            return "Rectangulos A y B se sobreponen";
+        }
+
+        if ((maxrecAx == minrecBx || maxrecBx == minrecAx) && (maxrecAy > minrecBy && maxrecBy > minrecAy)
+         || (maxrecAy == minrecBy || maxrecBy == minrecAy) && (maxrecAx > minrecBx && maxrecBx > minrecAx)){
+            return "Estan juntos los rectangulos";
+         }
+
+         else{
+            return "rectangulso disjuntos";
+         }
     }
 }
