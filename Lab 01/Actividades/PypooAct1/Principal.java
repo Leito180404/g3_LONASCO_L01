@@ -34,7 +34,8 @@ public class Principal {
         String resultado = Verificador.verificarRectangulos(A, B);
         System.out.println(resultado);
 
-        
+        if (resultado.equals("rectangilos A y B se sobreponen")){
+        }
     }
 
 }
