@@ -8,11 +8,11 @@ public class Verificador {
         double minrecAx = Math.min(a1.getX(), a2.getX());
         double maxrecAx = Math.max(a1.getX(), a2.getX());
         double minrecAy = Math.min(a1.getY(), a2.getY());
-        double maxrecAy = Math.min(a1.getY(), a2.getY());
+        double maxrecAy = Math.max(a1.getY(), a2.getY());
         
         double minrecBx = Math.min(a1.getX(), a2.getX());
         double maxrecBx = Math.max(a1.getX(), a2.getX());
         double minrecBy = Math.min(a1.getY(), a2.getY());
-        double maxrecBy = Math.min(a1.getY(), a2.getY());
+        double maxrecBy = Math.max(a1.getY(), a2.getY());
     }
 }
