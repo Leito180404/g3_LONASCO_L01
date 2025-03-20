@@ -7,6 +7,11 @@ public class Principal {
         Coordenada a2 = A.getEsquina2();
         Coordenada b1 = B.getEsquina1();
         Coordenada b2 = B.getEsquina2();
+
+        double minX = Math.max(Math.min(a1.getX(), a2.getX()), Math.min(b1.getX(), b2.getX()));
+        double maxX = Math.min(Math.max(a1.getX(), a2.getX()), Math.max(b1.getX(), b2.getX()));
+        double minY = Math.max(Math.min(a1.getY(), a2.getY()), Math.min(b1.getY(), b2.getY()));
+        double maxY = Math.min(Math.max(a1.getY(), a2.getY()), Math.max(b1.getY(), b2.getY()));
     }
 
     public static void main(String[] args){
