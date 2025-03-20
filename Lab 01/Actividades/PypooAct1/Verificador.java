@@ -10,10 +10,10 @@ public class Verificador {
         double minrecAy = Math.min(a1.getY(), a2.getY());
         double maxrecAy = Math.max(a1.getY(), a2.getY());
         
-        double minrecBx = Math.min(a1.getX(), a2.getX());
-        double maxrecBx = Math.max(a1.getX(), a2.getX());
-        double minrecBy = Math.min(a1.getY(), a2.getY());
-        double maxrecBy = Math.max(a1.getY(), a2.getY());
+        double minrecBx = Math.min(b1.getX(), b2.getX());
+        double maxrecBx = Math.max(b1.getX(), b2.getX());
+        double minrecBy = Math.min(b1.getY(), b2.getY());
+        double maxrecBy = Math.max(b1.getY(), b2.getY());
 
         if ((maxrecAx > minrecBx && maxrecBx > minrecAx && maxrecAy > minrecBy && maxrecBy > minrecAy)){
             return "Rectangulos A y B se sobreponen";
