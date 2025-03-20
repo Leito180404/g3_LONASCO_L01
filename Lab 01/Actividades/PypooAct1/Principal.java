@@ -1,6 +1,11 @@
 import java.util.*;
 
 public class Principal {
+
+    public static Rectangulo rectanguloSobre(Rectangulo A, Rectangulo B) {
+        Coordenada a1 = A.getEsquina1();
+    }
+
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
 
@@ -35,6 +40,7 @@ public class Principal {
         System.out.println(resultado);
 
         if (resultado.equals("rectangilos A y B se sobreponen")){
+
         }
     }
 
