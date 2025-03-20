@@ -29,7 +29,12 @@ public class Principal {
         Rectangulo B = new Rectangulo(c1b, c2b);
 
         System.out.println("Informacion del rectangulo A: " + A.toString());
-        System.out.println("Informacion del rectangulo A: " + B.toString());
+        System.out.println("Informacion del rectangulo B: " + B.toString());
+
+        String resultado = Verificador.verificarRectangulos(A, B);
+        System.out.println(resultado);
+
+        
     }
 
 }
