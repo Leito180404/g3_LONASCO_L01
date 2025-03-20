@@ -27,4 +27,10 @@ public class Rectangulo {
     public String toString(){
         return esquina1.toString() + esquina2.toString();
     }
+
+    public double calculoArea() {
+        double ancho = Math.abs(esquina2.getX() - esquina1.getX());
+        double alto = Math.abs(esquina2.getY() - esquina1.getY());
+        return ancho * alto;
+    }
 }
