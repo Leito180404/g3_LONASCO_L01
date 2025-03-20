@@ -27,6 +27,9 @@ public class Principal {
         Coordenada c1b = new Coordenada(x1b,y1b);
         Coordenada c2b = new Coordenada(x2b,y2b);
         Rectangulo B = new Rectangulo(c1b, c2b);
+
+        System.out.println("Informacion del rectangulo A: " + A.toString());
+        System.out.println("Informacion del rectangulo A: " + B.toString());
     }
 
 }
