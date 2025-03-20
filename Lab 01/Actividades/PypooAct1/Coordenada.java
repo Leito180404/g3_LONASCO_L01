@@ -46,5 +46,4 @@ public class Coordenada{
     public String toString(){
         return "coordenada(" + x +" , " + y + ")";
     }
-
 }
