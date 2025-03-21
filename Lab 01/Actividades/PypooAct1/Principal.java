@@ -12,6 +12,10 @@ public class Principal {
         double maxX = Math.min(Math.max(a1.getX(), a2.getX()), Math.max(b1.getX(), b2.getX()));
         double minY = Math.max(Math.min(a1.getY(), a2.getY()), Math.min(b1.getY(), b2.getY()));
         double maxY = Math.min(Math.max(a1.getY(), a2.getY()), Math.max(b1.getY(), b2.getY()));
+        
+        Coordenada c1 = new Coordenada(minX, minY);
+        Coordenada c2 = new Coordenada(maxX, maxY);
+        return new Rectangulo(c1, c2);
     }
 
     public static void main(String[] args){
@@ -47,9 +51,11 @@ public class Principal {
         String resultado = Verificador.verificarRectangulos(A, B);
         System.out.println(resultado);
 
-        if (resultado.equals("rectangilos A y B se sobreponen")){
-
+        if (resultado.equals("Rectangulos A y B se sobreponen")){
+            Rectangulo sobreposicion = Principal.rectanguloSobre(A, B);
+            System.out.println("area que esta sobrepuesta: " + sobreposicion.calculoArea());
         }
+        sc.close();
     }
 
 }
