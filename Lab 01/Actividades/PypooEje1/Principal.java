@@ -4,9 +4,9 @@ public class Principal {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
 
-        ContainerRect container = new ContainerRect(10);
+        ContainerRect container = new ContainerRect(5);
 
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < 2; i++) {
             System.out.println("Ingrese las coordenadas para el rectangulo " + (i + 1));
         
             System.out.println("Ingrese la primera coordenada de una esquina del rectangulo:");
@@ -35,11 +35,11 @@ public class Principal {
                 }
             }
 
-            if (sobrepuso) {
+            if (sobrepuso==true) {
                 System.out.println("El rectangulo " + (i + 1) + " se sobrepone con un rectangulo ya almacenado.");
-            } else if (junto) {
+            } else if (junto==true) {
                 System.out.println("El rectangulo " + (i + 1) + " esta junto con un rectangulo ya almacenado.");
-            } else if (disjunto) {
+            } else if (disjunto==true) {
                 System.out.println("El rectangulo " + (i + 1) + " es disjunto de un rectangulo ya almacenado.");
             }
 
