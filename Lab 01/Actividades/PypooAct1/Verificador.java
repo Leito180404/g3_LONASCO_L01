@@ -41,6 +41,7 @@ public class Verificador {
         Coordenada b1 = B.getEsquina1();
         Coordenada b2 = B.getEsquina2();
 
-        
+        double[] limitesA = calcularLimites(a1, a2);
+        double[] limitesB = calcularLimites(b1, b2);
     }
 }
