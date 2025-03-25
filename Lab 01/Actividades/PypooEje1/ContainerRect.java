@@ -36,10 +36,10 @@ public class ContainerRect {
     public String toString() {
         StringBuilder sb = new StringBuilder();
         for (int i = 0; i < numRec; i++) {
-            sb.append("Rectángulo ").append(i + 1).append(": ")
+            sb.append("Rectangulo ").append(i + 1).append(": ")
               .append(rectangulos[i].toString()).append("   ")
               .append("Distancia: ").append(String.format("%.3f", distancias[i])).append("   ")
-              .append("Área: ").append(String.format("%.2f", areas[i])).append("\n");
+              .append("area: ").append(String.format("%.2f", areas[i])).append("\n");
         }
         return sb.toString();
     }
