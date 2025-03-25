@@ -1,26 +1,21 @@
 public class Verificador {
-    public static String verificarRectangulos(Rectangulo A, Rectangulo B){
-        Coordenada a1 = A.getEsquina1();
-        Coordenada a2 = A.getEsquina2();
-        Coordenada b1 = B.getEsquina1();
-        Coordenada b2 = B.getEsquina2();
+    public static double[] calcularLimites(Coordenada c1, Coordenada c2) {
+        double minX = Math.min(c1.getX(), c2.getX());
+        double maxX = Math.max(c1.getX(), c2.getX());
+        double minY = Math.min(c1.getY(), c2.getY());
+        double maxY = Math.max(c1.getY(), c2.getY());
 
-        double minrecAx = Math.min(a1.getX(), a2.getX());
-        double maxrecAx = Math.max(a1.getX(), a2.getX());
-        double minrecAy = Math.min(a1.getY(), a2.getY());
-        double maxrecAy = Math.max(a1.getY(), a2.getY());
-        
-        double minrecBx = Math.min(b1.getX(), b2.getX());
-        double maxrecBx = Math.max(b1.getX(), b2.getX());
-        double minrecBy = Math.min(b1.getY(), b2.getY());
-        double maxrecBy = Math.max(b1.getY(), b2.getY());
+        return new double[] {minX, maxX, minY, maxY};
 
-        if ((maxrecAx > minrecBx && maxrecBx > minrecAx && maxrecAy > minrecBy && maxrecBy > minrecAy)){
+        if ((maxrecAx > minrecBx && maxrecBx > minrecAx && maxrecAy > minrecBy && 
+        maxrecBy > minrecAy)){
             return "Rectangulos A y B se sobreponen";
         }
 
-        if ((maxrecAx == minrecBx || maxrecBx == minrecAx) && (maxrecAy > minrecBy && maxrecBy > minrecAy)
-         || (maxrecAy == minrecBy || maxrecBy == minrecAy) && (maxrecAx > minrecBx && maxrecBx > minrecAx)){
+        if ((maxrecAx == minrecBx || maxrecBx == minrecAx) && (maxrecAy > minrecBy && 
+        maxrecBy > minrecAy)
+         || (maxrecAy == minrecBy || maxrecBy == minrecAy) && (maxrecAx > minrecBx && 
+         maxrecBx > minrecAx)){
             return "Estan juntos los rectangulos";
          }
 
