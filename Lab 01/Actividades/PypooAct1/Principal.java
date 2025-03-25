@@ -48,12 +48,14 @@ public class Principal {
         System.out.println("Informacion del rectangulo A: " + A.toString());
         System.out.println("Informacion del rectangulo B: " + B.toString());
 
-        String resultado = Verificador.verificarRectangulos(A, B);
-        System.out.println(resultado);
-
-        if (resultado.equals("Rectangulos A y B se sobreponen")){
-            Rectangulo sobreposicion = Principal.rectanguloSobre(A, B);
-            System.out.println("area que esta sobrepuesta: " + sobreposicion.calculoArea());
+        if (Verificador.esSobrePos(A, B)) {
+            System.out.println("Los rectangulos estans sobrepuestos.");
+            Rectangulo sobreposicion = rectanguloSobre(A, B);
+            System.out.println("area de la sobreposicion: " + sobreposicion.calculoArea());
+        } else if (Verificador.esJunto(A, B)) {
+            System.out.println("Los rectangulos A y B estan juntos.");
+        } else if (Verificador.esDisjunto(A, B)) {
+            System.out.println("Los rectangulos estan separados");
         }
         sc.close();
     }
