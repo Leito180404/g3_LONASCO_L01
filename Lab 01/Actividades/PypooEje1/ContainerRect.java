@@ -25,6 +25,21 @@ public class ContainerRect {
         }
     }
 
-    
+    public void mostrarResultados() {
+        System.out.println("rectangulos almacenados:");
+        for (int i = 0; i < numRec; i++) {
+            System.out.println("rectangulo " + (i + 1) + ": " + rectangulos[i].toString());
+            System.out.println("distancia Euclidiana: " + distancias[i]);
+            System.out.println("area: " + areas[i]);
+        }
+    }
+
+    public int getNumRec() {
+        return numRec;
+    }
+
+    public int getMaxRectangulos() {
+        return n;
+    }
    
 }
