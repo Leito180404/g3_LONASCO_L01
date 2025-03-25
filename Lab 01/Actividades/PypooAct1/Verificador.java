@@ -43,5 +43,8 @@ public class Verificador {
 
         double[] limitesA = calcularLimites(a1, a2);
         double[] limitesB = calcularLimites(b1, b2);
+
+        return limitesA[1] <= limitesB[0] || limitesB[1] <= limitesA[0] || 
+        limitesA[3] <= limitesB[2] || limitesB[3] <= limitesA[2];
     }
 }
