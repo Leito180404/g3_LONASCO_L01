@@ -12,5 +12,19 @@ public class ContainerRect {
         this.areas = new double[n];
         this.numRec = 0;
     }
+
+    public void addRectangulo(Rectangulo rectangulo) {
+        if (numRec < n) {
+            rectangulos[numRec] = rectangulo;
+            distancias[numRec] = Coordenada.distancia(rectangulo.getEsquina1(), rectangulo.getEsquina2());
+
+            areas[numRec] = rectangulo.calculoArea();
+            numRec++;
+        } else {
+            System.out.println("limite alcanzado");
+        }
+    }
+
+    
    
 }
