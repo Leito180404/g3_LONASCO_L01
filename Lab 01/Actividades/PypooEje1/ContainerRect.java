@@ -25,13 +25,15 @@ public class ContainerRect {
         }
     }
 
-    public void mostrarResultados() {
-        System.out.println("rectangulos almacenados:");
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
         for (int i = 0; i < numRec; i++) {
-            System.out.println("rectangulo " + (i + 1) + ": " + rectangulos[i].toString());
-            System.out.println("distancia Euclidiana: " + distancias[i]);
-            System.out.println("area: " + areas[i]);
+            sb.append("Rectángulo ").append(i + 1).append(": ")
+              .append(rectangulos[i].toString()).append("   ")
+              .append("Distancia: ").append(String.format("%.3f", distancias[i])).append("   ")
+              .append("Área: ").append(String.format("%.2f", areas[i])).append("\n");
         }
+        return sb.toString();
     }
 
     public int getNumRec() {
