@@ -25,6 +25,14 @@ public class ContainerRect {
         }
     }
 
+    public Rectangulo getRectangulo(int index) {
+        if (index >= 0 && index < numRec) {
+            return rectangulos[index];
+        } else {
+            return null;
+        }
+    }
+
     public String toString() {
         StringBuilder sb = new StringBuilder();
         for (int i = 0; i < numRec; i++) {
