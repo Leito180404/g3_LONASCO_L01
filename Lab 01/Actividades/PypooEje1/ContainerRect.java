@@ -43,5 +43,5 @@ public class ContainerRect {
     public int getMaxRectangulos() {
         return n;
     }
-   
+
 }
