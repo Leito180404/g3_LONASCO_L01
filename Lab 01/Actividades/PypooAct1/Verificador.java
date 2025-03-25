@@ -26,6 +26,18 @@ public class Verificador {
 
          else{
             return "rectangulso disjuntos";
-         }
+         } 
+    }
+
+    public static boolean esSobrePos(Rectangulo A, Rectangulo B){
+        
+    }
+
+    public static boolean esJunto(Rectangulo A, Rectangulo B){
+        
+    }
+
+    public static boolean esDisjunto(Rectangulo A, Rectangulo B){
+
     }
 }
