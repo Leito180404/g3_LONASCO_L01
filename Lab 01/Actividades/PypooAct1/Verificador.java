@@ -17,11 +17,20 @@ public class Verificador {
         double[] limitesA = calcularLimites(a1, a2);
         double[] limitesB = calcularLimites(b1, b2);
 
-        return limitesA[1] > limitesB[0] && limitesB[1] > limitesA[0] && limitesA[3] > limitesB[2] && limitesB[3] > limitesA[2];
+        return limitesA[1] > limitesB[0] && limitesB[1] > limitesA[0] && limitesA[3] > limitesB[2] && 
+        limitesB[3] > limitesA[2];
     }
 
     public static boolean esJunto(Rectangulo A, Rectangulo B){
+        Coordenada a1 = A.getEsquina1();
+        Coordenada a2 = A.getEsquina2();
+        Coordenada b1 = B.getEsquina1();
+        Coordenada b2 = B.getEsquina2();
         
+        double[] limitesA = calcularLimites(a1, a2);
+        double[] limitesB = calcularLimites(b1, b2);
+
+
     }
 
     public static boolean esDisjunto(Rectangulo A, Rectangulo B){
