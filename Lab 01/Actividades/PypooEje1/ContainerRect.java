@@ -16,7 +16,8 @@ public class ContainerRect {
     public void addRectangulo(Rectangulo rectangulo) {
         if (numRec < n) {
             rectangulos[numRec] = rectangulo;
-            distancias[numRec] = Coordenada.distancia(rectangulo.getEsquina1(), rectangulo.getEsquina2());
+            distancias[numRec] = Coordenada.distancia(rectangulo.getEsquina1(), 
+            rectangulo.getEsquina2());
 
             areas[numRec] = rectangulo.calculoArea();
             numRec++;
