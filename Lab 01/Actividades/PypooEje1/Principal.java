@@ -3,10 +3,11 @@ import java.util.*;
 public class Principal {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
+        System.out.println("Ingrese el numero de rectangulos que ingresara: ");
+        int cantrec = sc.nextInt();
+        ContainerRect container = new ContainerRect(cantrec);
 
-        ContainerRect container = new ContainerRect(5);
-
-        for (int i = 0; i < 2; i++) {
+        for (int i = 0; i < cantrec; i++) {
             System.out.println("Ingrese las coordenadas para el rectangulo " + (i + 1));
         
             System.out.println("Ingrese la primera coordenada de una esquina del rectangulo:");
